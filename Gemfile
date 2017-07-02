@@ -24,6 +24,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bcrypt', '3.1.11'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -49,6 +50,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'simplecov', '~> 0.12.0', require: false
   gem 'guard-rspec', require: false
+  gem 'rails-controller-testing'
+  gem 'capybara', '~> 2.10', '>= 2.10.1'
 end
 
 group :development do
